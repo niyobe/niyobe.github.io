@@ -1,8 +1,15 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
+import Main from './views/Main';
+import User from './views/User';
+
+
 function App() {
+  const browserrouter_basename = process.env.PUBLIC_URL;
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,9 +24,18 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a>        
       </header>
+      <div>
+        <BrowserRouter basename={browserrouter_basename}>
+          <Switch>
+            <Route path="/main" component={Main} onEnter={(e) => {console.log('enter');}} />
+            <Route path="/user" component={User} />
+          </Switch>
+        </BrowserRouter>
+      </div>       
     </div>
+
   );
 }
 
