@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap&subset=korean');
+
+.font-noto {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.font-myeongjo {  
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}

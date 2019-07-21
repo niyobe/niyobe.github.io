@@ -1,0 +1,1 @@
+set BROWSER=NONE&& set PUBLIC_URL=localhost
